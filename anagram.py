@@ -32,11 +32,10 @@ class Solution:
         if a or b is None:
             return False
         for i in a:
-            if i not in b:
+            if i not in b or a.count(i) != b.count(i):
                 return False
         return True
         # TODO: Write code below to return a bool with the solution to the prompt
-        pass
 
 def main():
     string1 = input().strip()
