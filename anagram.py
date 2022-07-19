@@ -31,12 +31,11 @@ class Solution:
         # return type: bool
         if a or b is None:
             return False
-        if len(a) != len(b):
-            return False
-        for i in a:
-            if i not in b or a.count(i) != b.count(i):
-                return False
-        return True
+        a = ''.join(sorted(a))
+        b = ''.join(sorted(b))
+        if a == b:
+            return True
+        return False
         # TODO: Write code below to return a bool with the solution to the prompt
 
 def main():
