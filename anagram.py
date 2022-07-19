@@ -31,6 +31,8 @@ class Solution:
         # return type: bool
         if a or b is None:
             return False
+        if len(a) != len(b):
+            return False
         for i in a:
             if i not in b or a.count(i) != b.count(i):
                 return False
