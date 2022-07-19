@@ -29,15 +29,16 @@ class Solution:
         # type a: string
         # type b: string
         # return type: bool
-        if a or b is None:
-            return False
+        '''if a or b is None:
+            return False'''
         a = ''.join(sorted(a)).lower()
         b = ''.join(sorted(b)).lower()
         if a == b:
             return True
         return False
-        # TODO: Write code below to return a bool with the solution to the prompt
 
+        # TODO: Write code below to return a bool with the solution to the prompt
+        
 def main():
     string1 = input().strip()
     string2 = input().strip()
