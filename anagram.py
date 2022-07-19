@@ -31,8 +31,8 @@ class Solution:
         # return type: bool
         if a or b is None:
             return False
-        a = ''.join(sorted(a))
-        b = ''.join(sorted(b))
+        a = ''.join(sorted(a)).lower()
+        b = ''.join(sorted(b)).lower()
         if a == b:
             return True
         return False
